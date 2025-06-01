@@ -1,10 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-  <title>Trang của tôi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gửi em – Ngày 1/6</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .card {
+      background-color: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #ff4e8a;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #444;
+    }
+
+    .heart {
+      color: #ff4e8a;
+      font-size: 40px;
+      animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <p>Đây là trang HTML đơn giản.</p>
+  <div class="card">
+    <div class="heart">💖</div>
+    <h1>Chúc mừng ngày 1/6, em yêu!</h1>
+    <p>Hôm nay là một ngày đặc biệt, và anh chỉ muốn em biết rằng:<br>
+      Em là điều ngọt ngào nhất trong cuộc sống của anh 💫</p>
+    <p>Chúc em luôn vui vẻ, đáng yêu như chính em vậy!</p>
+    <div class="footer">Gửi từ anh, người luôn nghĩ về em 💌</div>
+  </div>
 </body>
 </html>
